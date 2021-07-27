@@ -1,1 +1,1 @@
-# zabbix-api-scripts
+Some Python scripts which help to be friended with Zabbix API. 
