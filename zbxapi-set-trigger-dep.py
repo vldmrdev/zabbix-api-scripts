@@ -39,8 +39,8 @@ def hostget(hostid):
 # setup trigger dependencies
 def settriggerdep(triggerdepof, triggerdepon):
     zabbix.trigger.adddependencies(
-        triggerid=triggerdepof,  # зависимый
-        dependsOnTriggerid=triggerdepon  # от которого зависит
+        triggerid=triggerdepof,  # Dependent
+        dependsOnTriggerid=triggerdepon  # main trigger
     )
 
 
