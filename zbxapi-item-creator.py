@@ -12,8 +12,8 @@ with open('vpns.csv') as f:
     reader = csv.reader(f, delimiter=';')
     for row in reader:
         itemname = list(row[i] for i in incl_col1)
-        #keyname = "key." + str(*itemname) # v1
-        keyname = f"key {*itemname}" #v2
+        keyname = "key." + str(*itemname) # v1
+        #keyname = f'key {*itemname}' #v2
         oid = list(row[i] for i in incl_col2)
         # Creating item for hostid
         item = zbx.item.create(

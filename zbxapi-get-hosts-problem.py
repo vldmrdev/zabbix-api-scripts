@@ -20,5 +20,6 @@ def getHostnames(zbxurl, apilogin, apipasswd, problemname):
         # print(result)
     return result
 
-
-#print(getHostnames('URL', 'LOGIN', 'PASSWOR', 'PROBLEMNAME'))
+#Example
+# Look at this about POBLEMNAME https://www.zabbix.com/documentation/current/manual/web_interface/frontend_sections/monitoring/problems
+print(getHostnames('https://zbx.example.com/api', 'admin', 'P@ssw0rd%', 'Zabbix agent'))
